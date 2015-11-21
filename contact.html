@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Arena - Our Team</title>
+
+    <!-- Load bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Load css-->
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- Fonts from Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="header"></div>
+
+<div id="contact">
+    <form>
+        <table cellpadding="10" cellspacing="10" width="500">
+            <tr>
+                <td width="150"><label for="yourName">Name: </label></td>
+                <td><input type="text" class="form-control" id="yourName" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country: </label></td>
+                <td><select id="country" name="country" class="form-control">
+                    <option value=""></option>
+                    <option value="US">US</option>
+                    <option value="Other">Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Are you student? </label></td>
+                <td>
+                    <input type="radio" name="student" value="Yes" checked><span>Yes</span>
+                    <input type="radio" name="student" value="No" checked><span>No</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="message">Message: </label></td>
+                <td><textarea cols="50" rows="4" class="form-control" name="message" id="message"> </textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button id="submit" class="btn btn-warning btn-lg">Send</button>
+</div>
+
+<div id="result"></div>
+
+<div id="footer"></div>
+
+<!-- JavaScript-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<link href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
+</body>
+</html>
